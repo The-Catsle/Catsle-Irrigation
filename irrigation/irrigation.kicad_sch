@@ -182,140 +182,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:CircuitBreaker_1P_US"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "CB"
-				(at 3.175 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "CircuitBreaker_1P_US"
-				(at 3.175 0.635 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Single pole circuit breaker, US symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "CB"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CircuitBreaker_1P_US_0_1"
-				(arc
-					(start 1.905 3.81)
-					(mid 2.8044 0)
-					(end 1.905 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 4.445)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -4.445)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CircuitBreaker_1P_US_1_1"
-				(pin passive line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -714,6 +580,215 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Irrigation:Float Switch"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Float Switch"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SPDT reed switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "reed magnetic switch SPDT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Float Switch_0_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 1.905 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.159 -1.397) (xy 2.286 -1.397)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.159 -1.397)
+					(mid -3.55 0)
+					(end -2.159 1.397)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.159 1.397)
+					(mid 3.55 0)
+					(end 2.159 -1.397)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.159 1.397) (xy -2.159 1.397)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Float Switch_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0.635) (xy 5.08 0.635) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -0.635) (xy 5.08 -0.635) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Float Switch_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1437,28 +1512,20 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
+		(symbol "Phoenix Contact:TMC_71C_06A_1019913"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
+			(property "Reference" "CB"
+				(at 0 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
+			(property "Value" "TMC_71C_06A_1019913"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1466,6 +1533,15 @@
 				)
 			)
 			(property "Footprint" ""
+				(at -0.0635 0.0635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.mouser.com/ProductDetail/651-1019913"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -1474,16 +1550,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1492,73 +1559,54 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "TMC_71C_06A_1019913_0_1"
+				(circle
+					(center -1.27 0)
+					(radius 0.3592)
+					(stroke
+						(width 0.1524)
+						(type default)
 					)
-					(hide yes)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 0.6351)
+					(mid 0 1.1611)
+					(end 1.27 0.6351)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 0.3592)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
 				)
 			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "TMC_71C_06A_1019913_1_1"
 				(pin passive line
-					(at -5.08 0 0)
+					(at -3.81 0 0)
 					(length 2.54)
-					(name "1"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1567,16 +1615,16 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 3.81 0 180)
 					(length 2.54)
-					(name "2"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1589,46 +1637,34 @@
 		)
 	)
 	(junction
-		(at 149.86 121.92)
+		(at 125.73 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1d5e44f0-5865-48e9-b4f8-23e08ef6f722")
+		(uuid "24a51c36-ca13-453b-8e26-44132ae358d4")
 	)
 	(junction
-		(at 173.99 55.88)
+		(at 125.73 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1f49b312-afdd-4c93-8591-dd611b143c2d")
+		(uuid "4dacb7c7-6b9b-4f47-ae3c-51fc85a3a0c2")
 	)
 	(junction
-		(at 173.99 104.14)
+		(at 125.73 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3441ae4a-9d6c-4b2f-a0af-2130a8dd0bd4")
+		(uuid "7b7b2c2f-81c6-4076-bedb-75d8aafbeb35")
 	)
 	(junction
-		(at 173.99 68.58)
+		(at 15.24 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "34a707ec-dc21-4ace-b2a9-1e642983c45e")
+		(uuid "9a6027dc-6890-4f80-a193-af5bce9d9133")
 	)
 	(junction
-		(at 115.57 121.92)
+		(at 125.73 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "490bbc2a-356d-4b1c-bb2c-ba3ca17798fa")
-	)
-	(junction
-		(at 60.96 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7a3d1bf7-8d77-4b63-a34a-8ad825869f2f")
-	)
-	(junction
-		(at 173.99 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "847cfffe-ca71-4c8e-b7dc-ea441b074290")
+		(uuid "9bb97e32-c64d-4577-9e50-7a37b3c79af1")
 	)
 	(junction
 		(at 15.24 68.58)
@@ -1637,40 +1673,40 @@
 		(uuid "9ffc241e-62fd-492b-9786-f24462177b24")
 	)
 	(junction
-		(at 115.57 115.57)
+		(at 15.24 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b78bb3d3-b902-490e-be78-4cf156b9b610")
+		(uuid "aa5d0d95-1dfd-43f3-9def-6da8d6a1c400")
 	)
 	(junction
-		(at 15.24 44.45)
+		(at 15.24 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c72c3fd9-d66e-4c98-899b-05fd745507da")
+		(uuid "d46b2b9f-f51a-4cdd-84e4-b53c1291f014")
 	)
 	(junction
-		(at 34.29 68.58)
+		(at 125.73 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cebfba34-44ac-4b11-a0bf-b68006fcf091")
+		(uuid "d775a4eb-ee97-473e-99c0-87fb26ea81e5")
 	)
 	(junction
-		(at 173.99 44.45)
+		(at 125.73 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "da50b4dc-b503-4341-a927-1d5001596cc8")
+		(uuid "d9af3c38-8852-4a1d-92a8-2057ddb6bcb5")
 	)
 	(junction
-		(at 15.24 81.28)
+		(at 125.73 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "defe566c-100e-48d1-a43c-f09a154bbaac")
+		(uuid "e2f840f9-32e6-424a-b09b-1a1316da3baf")
 	)
 	(junction
-		(at 15.24 92.71)
+		(at 15.24 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e445a6fb-e7ff-4fc8-92fa-a439898b66ad")
+		(uuid "e40491a7-e8f7-415e-8b39-5ee86fa62af7")
 	)
 	(junction
 		(at 15.24 102.87)
@@ -1679,14 +1715,34 @@
 		(uuid "efdd3678-e75e-4213-a92d-065db2dfd068")
 	)
 	(junction
-		(at 15.24 55.88)
+		(at 125.73 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f3454603-61af-4b38-be07-89ae37df2cdc")
+		(uuid "fb1f8dbf-d387-4f2b-ba54-eb8861912234")
+	)
+	(no_connect
+		(at 93.98 87.63)
+		(uuid "14e86b12-5328-4d99-b9d6-3f3740692b96")
+	)
+	(no_connect
+		(at 62.23 100.33)
+		(uuid "1a99d388-8ae2-49c7-a526-8561bab49153")
+	)
+	(no_connect
+		(at 34.29 55.88)
+		(uuid "ae820c44-9f37-447f-bb37-0db7f04608ed")
+	)
+	(no_connect
+		(at 34.29 26.67)
+		(uuid "ea79dedb-0466-4a6a-ac72-fb3618b2edb6")
+	)
+	(no_connect
+		(at 34.29 40.64)
+		(uuid "ea99ee68-ebb5-46eb-9b78-6c654e4b9bd3")
 	)
 	(wire
 		(pts
-			(xy 15.24 102.87) (xy 39.37 102.87)
+			(xy 15.24 102.87) (xy 46.99 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1696,7 +1752,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 149.86) (xy 82.55 149.86)
+			(xy 30.48 158.75) (xy 39.37 158.75)
 		)
 		(stroke
 			(width 0)
@@ -1706,7 +1762,17 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 68.58) (xy 173.99 68.58)
+			(xy 41.91 97.79) (xy 41.91 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1030c432-9d2e-483e-b6fc-61397d800e41")
+	)
+	(wire
+		(pts
+			(xy 57.15 66.04) (xy 125.73 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1716,7 +1782,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 168.91) (xy 118.11 167.64)
+			(xy 74.93 177.8) (xy 74.93 176.53)
 		)
 		(stroke
 			(width 0)
@@ -1726,7 +1792,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 146.05) (xy 60.96 146.05)
+			(xy 15.24 154.94) (xy 30.48 154.94)
 		)
 		(stroke
 			(width 0)
@@ -1736,23 +1802,13 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 121.92) (xy 115.57 121.92)
+			(xy 83.82 138.43) (xy 125.73 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1a351586-041b-474e-8d16-d56e608015b0")
-	)
-	(wire
-		(pts
-			(xy 96.52 91.44) (xy 127 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d6d9784-96d6-46f2-84a3-3560b727502c")
 	)
 	(wire
 		(pts
@@ -1766,17 +1822,17 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 121.92) (xy 60.96 121.92)
+			(xy 34.29 71.12) (xy 73.66 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "207c9a42-fbdf-4905-9bcc-8636e3209264")
+		(uuid "1edeb35a-7fdd-4890-8657-67a0f26940ec")
 	)
 	(wire
 		(pts
-			(xy 173.99 33.02) (xy 173.99 44.45)
+			(xy 125.73 21.59) (xy 125.73 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1786,7 +1842,27 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 33.02) (xy 15.24 33.02)
+			(xy 125.73 138.43) (xy 125.73 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24aeeec9-e416-4dff-a20c-a2dfd3379525")
+	)
+	(wire
+		(pts
+			(xy 73.66 90.17) (xy 73.66 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "263f401c-ab5c-4987-b807-7765ddbaee1a")
+	)
+	(wire
+		(pts
+			(xy 21.59 24.13) (xy 15.24 24.13)
 		)
 		(stroke
 			(width 0)
@@ -1796,17 +1872,17 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 146.05) (xy 68.58 146.05)
+			(xy 125.73 92.71) (xy 125.73 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "29b2e9d2-592f-4aa7-9b2b-ff0825e965dd")
+		(uuid "2ceda32b-86e6-40d0-9f39-8dae8b482d27")
 	)
 	(wire
 		(pts
-			(xy 43.18 44.45) (xy 173.99 44.45)
+			(xy 57.15 35.56) (xy 125.73 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1816,17 +1892,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 81.28) (xy 15.24 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "325e1488-894c-44a0-9d07-ab9a75ac53d0")
-	)
-	(wire
-		(pts
-			(xy 104.14 165.1) (xy 105.41 165.1)
+			(xy 60.96 173.99) (xy 62.23 173.99)
 		)
 		(stroke
 			(width 0)
@@ -1836,17 +1902,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 55.88) (xy 15.24 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3691bcd6-a157-4b11-9b67-ce2b5e088086")
-	)
-	(wire
-		(pts
-			(xy 142.24 81.28) (xy 149.86 81.28)
+			(xy 93.98 80.01) (xy 125.73 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1856,27 +1912,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 104.14) (xy 158.75 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37193b8f-832c-4bd4-a049-d35290240770")
-	)
-	(wire
-		(pts
-			(xy 173.99 55.88) (xy 173.99 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "374b51be-0e7d-4e42-81ea-e2866e227260")
-	)
-	(wire
-		(pts
-			(xy 43.18 55.88) (xy 173.99 55.88)
+			(xy 57.15 50.8) (xy 125.73 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1886,7 +1922,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 81.28) (xy 121.92 81.28)
+			(xy 78.74 80.01) (xy 73.66 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1896,7 +1932,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 165.1) (xy 85.09 165.1)
+			(xy 39.37 173.99) (xy 41.91 173.99)
 		)
 		(stroke
 			(width 0)
@@ -1906,7 +1942,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 168.91) (xy 73.66 167.64)
+			(xy 30.48 177.8) (xy 30.48 176.53)
 		)
 		(stroke
 			(width 0)
@@ -1916,7 +1952,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 81.28) (xy 121.92 71.12)
+			(xy 73.66 80.01) (xy 73.66 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1926,7 +1962,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 149.86) (xy 118.11 151.13)
+			(xy 74.93 158.75) (xy 74.93 160.02)
 		)
 		(stroke
 			(width 0)
@@ -1936,7 +1972,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 149.86) (xy 118.11 149.86)
+			(xy 62.23 158.75) (xy 74.93 158.75)
 		)
 		(stroke
 			(width 0)
@@ -1946,7 +1982,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 151.13) (xy 73.66 149.86)
+			(xy 30.48 160.02) (xy 30.48 158.75)
 		)
 		(stroke
 			(width 0)
@@ -1956,47 +1992,17 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 85.09) (xy 73.66 81.28)
+			(xy 15.24 102.87) (xy 15.24 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d23bf6e-fabe-4d71-9096-49317a2a39d4")
+		(uuid "51a93d2a-d09a-4ef9-9adc-f38e44b29be3")
 	)
 	(wire
 		(pts
-			(xy 15.24 92.71) (xy 15.24 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d6d1426-40e2-45ce-9e45-0c95f0bcda29")
-	)
-	(wire
-		(pts
-			(xy 73.66 100.33) (xy 73.66 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4fdd1e40-518c-4ec1-9733-c9d7097b1f08")
-	)
-	(wire
-		(pts
-			(xy 35.56 68.58) (xy 34.29 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "530aae8d-2863-4dac-8617-ebe2e49b4207")
-	)
-	(wire
-		(pts
-			(xy 21.59 92.71) (xy 15.24 92.71)
+			(xy 21.59 95.25) (xy 15.24 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2006,27 +2012,37 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 81.28) (xy 73.66 81.28)
+			(xy 15.24 95.25) (xy 15.24 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5cbcedfd-35bc-4eed-9087-9afd40235a0c")
+		(uuid "5db22e75-ad6e-44fd-9891-35dbf728b58d")
 	)
 	(wire
 		(pts
-			(xy 173.99 104.14) (xy 173.99 121.92)
+			(xy 62.23 105.41) (xy 73.66 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "62540112-6e99-4848-a70c-ec46abedbf39")
+		(uuid "5f945202-1bcc-49b2-82a4-8035b288a450")
 	)
 	(wire
 		(pts
-			(xy 54.61 92.71) (xy 68.58 92.71)
+			(xy 41.91 123.19) (xy 76.2 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "622bca0b-f375-4190-830d-6423718d9d06")
+	)
+	(wire
+		(pts
+			(xy 62.23 92.71) (xy 68.58 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2036,27 +2052,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 100.33) (xy 73.66 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64f73c6c-8697-4a40-b087-e822b89f973e")
-	)
-	(wire
-		(pts
-			(xy 173.99 121.92) (xy 173.99 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68ee959a-4455-4f23-9b88-ff0f3ed21530")
-	)
-	(wire
-		(pts
-			(xy 34.29 68.58) (xy 31.75 68.58)
+			(xy 34.29 66.04) (xy 49.53 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2066,7 +2062,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 92.71) (xy 68.58 115.57)
+			(xy 68.58 92.71) (xy 68.58 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2076,17 +2072,27 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 71.12) (xy 34.29 68.58)
+			(xy 125.73 50.8) (xy 125.73 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "74de081f-89cd-43ea-a25f-7dbcb4b6a7d2")
+		(uuid "6db225b8-5f70-4104-850b-74586c787230")
 	)
 	(wire
 		(pts
-			(xy 73.66 95.25) (xy 81.28 95.25)
+			(xy 125.73 123.19) (xy 125.73 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "744d5b3b-f8c5-47b6-8503-4ae57edbe01b")
+	)
+	(wire
+		(pts
+			(xy 73.66 90.17) (xy 78.74 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2096,7 +2102,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 168.91) (xy 118.11 168.91)
+			(xy 60.96 177.8) (xy 74.93 177.8)
 		)
 		(stroke
 			(width 0)
@@ -2106,37 +2112,57 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 121.92) (xy 115.57 121.92)
+			(xy 15.24 68.58) (xy 15.24 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "78926c78-e567-4c4c-9ff7-9d477a8b3c55")
+		(uuid "76f0ced4-139f-4672-a2df-1a1f65ba1608")
 	)
 	(wire
 		(pts
-			(xy 68.58 115.57) (xy 115.57 115.57)
+			(xy 83.82 123.19) (xy 125.73 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "78e4efa5-8640-4c42-b96c-ef55af4c314b")
+		(uuid "775488d1-d65c-4c49-9ea3-4d40a1176b6c")
 	)
 	(wire
 		(pts
-			(xy 115.57 115.57) (xy 115.57 121.92)
+			(xy 15.24 138.43) (xy 76.2 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8837c5a3-d2ab-4da0-9a56-414fd4bad091")
+		(uuid "82991dd0-d88b-45aa-a074-3fda040463f5")
 	)
 	(wire
 		(pts
-			(xy 82.55 149.86) (xy 82.55 165.1)
+			(xy 15.24 53.34) (xy 15.24 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8802f708-b102-4a54-85f6-bfe6999356cb")
+	)
+	(wire
+		(pts
+			(xy 125.73 109.22) (xy 125.73 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a44a8ff-e3dd-4c2a-adc4-8eb140c48366")
+	)
+	(wire
+		(pts
+			(xy 39.37 158.75) (xy 39.37 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2146,17 +2172,17 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 55.88) (xy 31.75 55.88)
+			(xy 34.29 50.8) (xy 49.53 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8cb336de-a705-4473-b380-2edc3e7cc665")
+		(uuid "8dc96e6c-a7db-4e23-a98d-d5785b038429")
 	)
 	(wire
 		(pts
-			(xy 142.24 93.98) (xy 143.51 93.98)
+			(xy 93.98 92.71) (xy 104.14 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2166,17 +2192,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 102.87) (xy 15.24 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91019031-8efc-4c49-bfb2-05c6d5c508ad")
-	)
-	(wire
-		(pts
-			(xy 35.56 33.02) (xy 31.75 33.02)
+			(xy 34.29 21.59) (xy 49.53 21.59)
 		)
 		(stroke
 			(width 0)
@@ -2186,7 +2202,17 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 152.4) (xy 97.79 146.05)
+			(xy 15.24 38.1) (xy 15.24 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92937965-fa4a-47c6-bb6d-5a4b5c5b2d43")
+	)
+	(wire
+		(pts
+			(xy 54.61 161.29) (xy 54.61 154.94)
 		)
 		(stroke
 			(width 0)
@@ -2196,17 +2222,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 93.98) (xy 143.51 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a09eeee4-7f32-42d1-866a-7d6fd10b9291")
-	)
-	(wire
-		(pts
-			(xy 21.59 55.88) (xy 15.24 55.88)
+			(xy 21.59 53.34) (xy 15.24 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2216,7 +2232,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 44.45) (xy 173.99 55.88)
+			(xy 125.73 35.56) (xy 125.73 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2226,27 +2242,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 71.12) (xy 121.92 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5769c98-f777-481e-b5aa-fc42e5d5cd12")
-	)
-	(wire
-		(pts
-			(xy 15.24 44.45) (xy 15.24 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab32894a-ee5e-4838-96a4-48a62ad0e421")
-	)
-	(wire
-		(pts
-			(xy 85.09 168.91) (xy 73.66 168.91)
+			(xy 41.91 177.8) (xy 30.48 177.8)
 		)
 		(stroke
 			(width 0)
@@ -2256,27 +2252,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 85.09) (xy 115.57 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "afd4bc57-7a0b-4112-a086-17b8ab7324c8")
-	)
-	(wire
-		(pts
-			(xy 115.57 85.09) (xy 115.57 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b07e37c6-f54f-4aa4-950e-5617bbe910fc")
-	)
-	(wire
-		(pts
-			(xy 73.66 160.02) (xy 73.66 158.75)
+			(xy 30.48 168.91) (xy 30.48 167.64)
 		)
 		(stroke
 			(width 0)
@@ -2286,7 +2262,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 44.45) (xy 15.24 44.45)
+			(xy 21.59 38.1) (xy 15.24 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2296,7 +2272,17 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 165.1) (xy 105.41 149.86)
+			(xy 15.24 138.43) (xy 15.24 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b64b4c5a-1352-44a2-97f1-41d0a6c66abb")
+	)
+	(wire
+		(pts
+			(xy 62.23 173.99) (xy 62.23 158.75)
 		)
 		(stroke
 			(width 0)
@@ -2306,27 +2292,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 85.09) (xy 81.28 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc277cde-9141-4ba9-8a06-c542fb68d953")
-	)
-	(wire
-		(pts
-			(xy 96.52 92.71) (xy 96.52 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c042487c-b5dc-4d06-b046-3c72d7c76696")
-	)
-	(wire
-		(pts
-			(xy 91.44 152.4) (xy 91.44 146.05)
+			(xy 48.26 161.29) (xy 48.26 154.94)
 		)
 		(stroke
 			(width 0)
@@ -2336,27 +2302,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 68.58) (xy 173.99 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c668c7b3-ba53-4966-9bd9-7bb5c763f494")
-	)
-	(wire
-		(pts
-			(xy 149.86 121.92) (xy 173.99 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8d91134-74bf-4c8f-98de-7e26c3079f6e")
-	)
-	(wire
-		(pts
-			(xy 171.45 104.14) (xy 173.99 104.14)
+			(xy 116.84 92.71) (xy 125.73 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2366,7 +2312,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 146.05) (xy 91.44 146.05)
+			(xy 38.1 154.94) (xy 48.26 154.94)
 		)
 		(stroke
 			(width 0)
@@ -2376,7 +2322,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 33.02) (xy 15.24 44.45)
+			(xy 15.24 24.13) (xy 15.24 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2386,17 +2332,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 81.28) (xy 149.86 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1040136-95a0-4950-b76e-2635924e8c24")
-	)
-	(wire
-		(pts
-			(xy 97.79 146.05) (xy 173.99 146.05)
+			(xy 54.61 154.94) (xy 125.73 154.94)
 		)
 		(stroke
 			(width 0)
@@ -2406,17 +2342,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 81.28) (xy 21.59 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e34fdbf1-3653-4404-b0ea-d5ce9710ec8e")
-	)
-	(wire
-		(pts
-			(xy 43.18 33.02) (xy 173.99 33.02)
+			(xy 57.15 21.59) (xy 125.73 21.59)
 		)
 		(stroke
 			(width 0)
@@ -2426,7 +2352,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 92.71) (xy 39.37 92.71)
+			(xy 34.29 92.71) (xy 46.99 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2436,7 +2362,27 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 44.45) (xy 31.75 44.45)
+			(xy 125.73 66.04) (xy 125.73 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb3b28bb-086e-464c-9b4f-90ac31aee92d")
+	)
+	(wire
+		(pts
+			(xy 68.58 109.22) (xy 125.73 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecd793a2-732d-48b5-9d86-0b378e6f49b1")
+	)
+	(wire
+		(pts
+			(xy 49.53 35.56) (xy 34.29 35.56)
 		)
 		(stroke
 			(width 0)
@@ -2446,7 +2392,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 160.02) (xy 118.11 158.75)
+			(xy 74.93 168.91) (xy 74.93 167.64)
 		)
 		(stroke
 			(width 0)
@@ -2456,27 +2402,27 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 121.92) (xy 60.96 146.05)
+			(xy 34.29 97.79) (xy 41.91 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f868b8be-bea3-478a-8ea5-b61122f3231e")
+		(uuid "f90f93eb-651e-45a8-98c3-9645b8d522ca")
 	)
 	(wire
 		(pts
-			(xy 15.24 68.58) (xy 15.24 81.28)
+			(xy 125.73 80.01) (xy 125.73 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f95db59b-ae44-461f-9957-a61b4cbd5673")
+		(uuid "fbcb2819-6cf6-426c-b0cf-98ec1c1247bb")
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 39.37 55.88 180)
+		(at 53.34 50.8 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2485,7 +2431,7 @@
 		(fields_autoplaced yes)
 		(uuid "1896a1e8-dcb9-4fb0-83b3-ed825e5d4fac")
 		(property "Reference" "D3"
-			(at 40.9575 48.26 0)
+			(at 54.9275 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2493,7 +2439,7 @@
 			)
 		)
 		(property "Value" "75% Full"
-			(at 40.9575 50.8 0)
+			(at 54.9275 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2501,7 +2447,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 55.88 0)
+			(at 53.34 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2510,7 +2456,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 55.88 0)
+			(at 53.34 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2519,7 +2465,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 39.37 55.88 0)
+			(at 53.34 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2528,7 +2474,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 39.37 55.88 0)
+			(at 53.34 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2552,25 +2498,25 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:CircuitBreaker_1P_US")
-		(at 76.2 146.05 90)
+		(lib_id "Irrigation:Float Switch")
+		(at 26.67 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1bd3d683-cfcb-4e74-afab-c6b280545845")
-		(property "Reference" "CB1"
-			(at 76.2 138.43 90)
+		(uuid "2d90bbfb-c16c-4ced-9016-75f9807ff59b")
+		(property "Reference" "SW7"
+			(at 27.3715 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "CircuitBreaker_1P_US"
-			(at 76.2 140.97 90)
+		(property "Value" "25%"
+			(at 27.3715 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2578,7 +2524,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 146.05 0)
+			(at 26.67 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2587,7 +2533,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 76.2 146.05 0)
+			(at 26.67 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2595,8 +2541,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single pole circuit breaker, US symbol"
-			(at 76.2 146.05 0)
+		(property "Description" "SPDT reed switch"
+			(at 26.67 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2605,40 +2551,43 @@
 			)
 		)
 		(pin "1"
-			(uuid "063a825e-4c83-4063-88d4-6c0f61674372")
+			(uuid "18294e7d-3ab1-4fd7-84ad-0b1a2ab06dd0")
+		)
+		(pin "3"
+			(uuid "6b825a31-8fa3-45e1-8980-0620377dc156")
 		)
 		(pin "2"
-			(uuid "130c37a8-7ab0-42ed-822b-63786c063790")
+			(uuid "39fa4858-ded3-45e8-a49a-5aacac09e454")
 		)
 		(instances
 			(project ""
 				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
-					(reference "CB1")
+					(reference "SW7")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 39.37 68.58 180)
+		(lib_id "Irrigation:Float Switch")
+		(at 26.67 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "44ea24d8-a266-449e-ac09-a56a224934e5")
-		(property "Reference" "D6"
-			(at 40.9575 60.96 0)
+		(uuid "3bcf06f3-648d-43b0-a4b5-64af59f031a7")
+		(property "Reference" "SW9"
+			(at 27.3715 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "100% Full"
-			(at 40.9575 63.5 0)
+		(property "Value" "75%"
+			(at 27.3715 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2646,7 +2595,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 68.58 0)
+			(at 26.67 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2655,7 +2604,78 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 68.58 0)
+			(at 26.67 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SPDT reed switch"
+			(at 26.67 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2df1845a-1bce-4ce7-b87a-caab2bf36057")
+		)
+		(pin "3"
+			(uuid "d8f5bc35-58c2-4b0b-a7b1-7bc1ae51b16c")
+		)
+		(pin "2"
+			(uuid "f7b9bc23-8d65-4ed9-a3f5-97bc313e44dc")
+		)
+		(instances
+			(project "irrigation"
+				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 53.34 66.04 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44ea24d8-a266-449e-ac09-a56a224934e5")
+		(property "Reference" "D6"
+			(at 54.9275 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100% Full"
+			(at 54.9275 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2664,7 +2684,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 39.37 68.58 0)
+			(at 53.34 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2673,7 +2693,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 39.37 68.58 0)
+			(at 53.34 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2697,221 +2717,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Irrigation:PLC-RPT-24DC/21")
-		(at 88.9 90.17 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "50b3ac42-1a1e-404e-9425-05050d6ac31a")
-		(property "Reference" "K2"
-			(at 88.9 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PLC-RPT-24DC/21"
-			(at 88.9 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.884 119.126 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/ProductDetail/Phoenix-Contact/2900299?qs=yDWYzLgaxI2Ztu%2F0JMLp4g%3D%3D"
-			(at 88.9 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PLC-RPT- 24DC/21 - Relay module"
-			(at 88.9 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "A1"
-			(uuid "14993f6c-6ca3-4063-8853-529562c07eff")
-		)
-		(pin "14"
-			(uuid "91c4cb58-1b3c-4502-a45a-31c452e3f9e8")
-		)
-		(pin "12"
-			(uuid "6057741f-8025-4caa-ad19-17839d6f6d87")
-		)
-		(pin "11"
-			(uuid "ab9d4569-597f-4ffb-9a5d-77bb1c8b069c")
-		)
-		(pin "A2"
-			(uuid "17b4739d-88cf-4a90-92ed-e6a6f3f04b55")
-		)
-		(instances
-			(project "irrigation"
-				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
-					(reference "K2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 26.67 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "52fbc558-e4c4-4672-abab-211d1228f968")
-		(property "Reference" "SW2"
-			(at 26.67 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100%"
-			(at 26.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 26.67 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e8fcf8d3-5a9f-42bb-9bec-655a1e406a27")
-		)
-		(pin "2"
-			(uuid "378a7e97-ba95-4694-af8d-d041a6ef6751")
-		)
-		(instances
-			(project "irrigation"
-				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 26.67 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5a7fa5c8-8b54-49b2-8908-79c90e759667")
-		(property "Reference" "SW3"
-			(at 26.67 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Well Empty"
-			(at 26.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 26.67 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "17a41f11-665d-4c50-8b9f-81417dc685ec")
-		)
-		(pin "2"
-			(uuid "46850adb-7c31-458e-bfd9-a31b3a5dcfdf")
-		)
-		(instances
-			(project "irrigation"
-				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Irrigation:Pump")
-		(at 166.37 104.14 90)
+		(at 111.76 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2920,7 +2727,7 @@
 		(fields_autoplaced yes)
 		(uuid "5c7ebff4-2862-4edb-8ccc-9602b173f77e")
 		(property "Reference" "M1"
-			(at 166.37 96.52 90)
+			(at 111.76 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2928,7 +2735,7 @@
 			)
 		)
 		(property "Value" "Pump"
-			(at 166.37 99.06 90)
+			(at 111.76 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2936,7 +2743,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.116 104.14 0)
+			(at 111.506 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2945,7 +2752,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.amazon.com/dp/B08NK7NWS3"
-			(at 166.116 104.14 0)
+			(at 111.506 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2954,7 +2761,7 @@
 			)
 		)
 		(property "Description" "24V Water Pump"
-			(at 166.37 104.14 0)
+			(at 111.76 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2979,7 +2786,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 205.74 124.46 180)
+		(at 80.01 123.19 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2988,7 +2795,7 @@
 		(fields_autoplaced yes)
 		(uuid "631b3901-6d93-419b-8f4e-7e55aab6e797")
 		(property "Reference" "D7"
-			(at 207.3275 116.84 0)
+			(at 81.5975 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2996,7 +2803,7 @@
 			)
 		)
 		(property "Value" "Well Empty"
-			(at 207.3275 119.38 0)
+			(at 81.5975 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3004,7 +2811,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 124.46 0)
+			(at 80.01 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3013,7 +2820,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 124.46 0)
+			(at 80.01 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3022,7 +2829,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 205.74 124.46 0)
+			(at 80.01 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3031,7 +2838,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 205.74 124.46 0)
+			(at 80.01 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3055,76 +2862,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 26.67 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "695f2cc1-9801-4eeb-a093-9aa180e2fcc4")
-		(property "Reference" "SW5"
-			(at 26.67 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "50%"
-			(at 26.67 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 26.67 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d07ca287-e9fe-47b2-9148-91f6b90204f8")
-		)
-		(pin "2"
-			(uuid "16a984b5-72b7-4b95-a4c1-9f4688962249")
-		)
-		(instances
-			(project "irrigation"
-				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
-		(at 39.37 33.02 180)
+		(at 53.34 21.59 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3133,7 +2872,7 @@
 		(fields_autoplaced yes)
 		(uuid "785e2393-1df5-4c53-9d3d-60a856846fda")
 		(property "Reference" "D5"
-			(at 40.9575 25.4 0)
+			(at 54.9275 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3141,7 +2880,7 @@
 			)
 		)
 		(property "Value" "25% Full"
-			(at 40.9575 27.94 0)
+			(at 54.9275 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3149,7 +2888,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 33.02 0)
+			(at 53.34 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3158,7 +2897,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 33.02 0)
+			(at 53.34 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3167,7 +2906,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 39.37 33.02 0)
+			(at 53.34 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3176,7 +2915,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 39.37 33.02 0)
+			(at 53.34 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3201,7 +2940,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 73.66 156.21 0)
+		(at 30.48 165.1 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3211,7 +2950,7 @@
 		(fields_autoplaced yes)
 		(uuid "88c02723-883b-46c4-ab12-b973caa67688")
 		(property "Reference" "BT1"
-			(at 69.85 153.0984 0)
+			(at 26.67 161.9884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3220,7 +2959,7 @@
 			)
 		)
 		(property "Value" "12V"
-			(at 69.85 155.6384 0)
+			(at 26.67 164.5284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3229,7 +2968,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 154.686 90)
+			(at 30.48 163.576 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3238,7 +2977,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.66 154.686 90)
+			(at 30.48 163.576 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3247,7 +2986,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 73.66 156.21 0)
+			(at 30.48 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3271,76 +3010,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 26.67 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8ae52c01-9c3c-4fde-9575-aa604eafdc64")
-		(property "Reference" "SW6"
-			(at 26.67 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "25%"
-			(at 26.67 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 26.67 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0576ee23-b325-4320-ab10-a13160a8933d")
-		)
-		(pin "2"
-			(uuid "530e13dc-d565-4903-bb56-0de174e40c42")
-		)
-		(instances
-			(project "irrigation"
-				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
-					(reference "SW6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Irrigation:MPPT-Charger")
-		(at 95.25 167.64 180)
+		(at 52.07 176.53 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3349,7 +3020,7 @@
 		(fields_autoplaced yes)
 		(uuid "8d2a64c6-2dc1-42d0-85d6-89ff1013a193")
 		(property "Reference" "U1"
-			(at 94.615 173.99 0)
+			(at 51.435 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3357,7 +3028,7 @@
 			)
 		)
 		(property "Value" "MPPT-Charger"
-			(at 94.615 176.53 0)
+			(at 51.435 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3365,7 +3036,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 176.53 0)
+			(at 33.02 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3374,7 +3045,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 189.23 0)
+			(at 52.07 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3383,7 +3054,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 95.25 167.64 0)
+			(at 52.07 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3420,7 +3091,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 39.37 44.45 180)
+		(at 53.34 35.56 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3429,7 +3100,7 @@
 		(fields_autoplaced yes)
 		(uuid "95440233-539a-4911-b951-2cd03e7afeca")
 		(property "Reference" "D4"
-			(at 40.9575 36.83 0)
+			(at 54.9275 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3437,7 +3108,7 @@
 			)
 		)
 		(property "Value" "50% Full"
-			(at 40.9575 39.37 0)
+			(at 54.9275 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3445,7 +3116,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 44.45 0)
+			(at 53.34 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3454,7 +3125,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 44.45 0)
+			(at 53.34 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3463,7 +3134,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 39.37 44.45 0)
+			(at 53.34 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3472,7 +3143,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 39.37 44.45 0)
+			(at 53.34 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3496,17 +3167,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 26.67 55.88 0)
+		(lib_id "Irrigation:Float Switch")
+		(at 26.67 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "98540c46-5039-45d9-81d3-57c666286806")
-		(property "Reference" "SW4"
-			(at 26.67 48.26 0)
+		(uuid "a05592be-92df-477d-9268-68a742d05055")
+		(property "Reference" "SW11"
+			(at 27.3715 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3514,7 +3185,7 @@
 			)
 		)
 		(property "Value" "75%"
-			(at 26.67 50.8 0)
+			(at 27.3715 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3522,7 +3193,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 50.8 0)
+			(at 26.67 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3531,7 +3202,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 50.8 0)
+			(at 26.67 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3539,8 +3210,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 26.67 55.88 0)
+		(property "Description" "SPDT reed switch"
+			(at 26.67 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3549,40 +3220,43 @@
 			)
 		)
 		(pin "1"
-			(uuid "c0259ca8-8f61-4cff-a875-68803930a1c5")
+			(uuid "51b7bf06-8faa-42e7-af12-aaa73612ea5d")
+		)
+		(pin "3"
+			(uuid "c5075f4d-6671-44a4-98bd-b06c20c2fce3")
 		)
 		(pin "2"
-			(uuid "56532453-7a47-41b2-9263-349238c6490f")
+			(uuid "f4ce0955-d2e4-4534-bd2f-0940e256f6ce")
 		)
 		(instances
 			(project "irrigation"
 				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
-					(reference "SW4")
+					(reference "SW11")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 26.67 81.28 0)
+		(lib_id "Irrigation:Float Switch")
+		(at 26.67 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a06ef5b5-5b87-430c-8ccf-0c98debcb7d2")
-		(property "Reference" "SW1"
-			(at 26.67 73.66 0)
+		(uuid "acf81dbf-c7b9-44d6-82ed-8bcb5525842d")
+		(property "Reference" "SW8"
+			(at 27.3715 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Barrel Full"
-			(at 26.67 76.2 0)
+		(property "Value" "50%"
+			(at 27.3715 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3590,7 +3264,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 76.2 0)
+			(at 26.67 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3599,7 +3273,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 76.2 0)
+			(at 26.67 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3607,8 +3281,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 26.67 81.28 0)
+		(property "Description" "SPDT reed switch"
+			(at 26.67 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3617,15 +3291,89 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f89916c-1212-4ced-8478-f729f887dd84")
+			(uuid "2cdcc04f-dd30-4f78-8f94-2934fa4421d0")
+		)
+		(pin "3"
+			(uuid "265a411e-5ec8-49b2-88d2-18f6aa70cdb8")
 		)
 		(pin "2"
-			(uuid "31833bbb-53f7-460b-8882-575fd43514e1")
+			(uuid "d3281aa0-669a-44e0-aed3-2cb52e77c456")
 		)
 		(instances
-			(project ""
+			(project "irrigation"
 				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
-					(reference "SW1")
+					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Irrigation:Float Switch")
+		(at 26.67 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5235643-e6e2-4dd9-bc8e-95515eeabd8a")
+		(property "Reference" "SW10"
+			(at 27.3715 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "75%"
+			(at 27.3715 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.67 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SPDT reed switch"
+			(at 26.67 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "605e68f8-b161-406d-be80-34b733d6a88a")
+		)
+		(pin "3"
+			(uuid "9aa6bc67-5d5c-4e64-9f4a-37d813368bb2")
+		)
+		(pin "2"
+			(uuid "ff7c744f-2067-4f0d-bac0-7d371286610c")
+		)
+		(instances
+			(project "irrigation"
+				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
+					(reference "SW10")
 					(unit 1)
 				)
 			)
@@ -3633,7 +3381,7 @@
 	)
 	(symbol
 		(lib_id "Irrigation:PLC-RPT-24DC/21")
-		(at 46.99 97.79 270)
+		(at 54.61 97.79 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3642,7 +3390,7 @@
 		(fields_autoplaced yes)
 		(uuid "deaa213f-1e62-4dcf-84b5-4dc976740a56")
 		(property "Reference" "K3"
-			(at 46.99 82.55 90)
+			(at 54.61 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3650,7 +3398,7 @@
 			)
 		)
 		(property "Value" "PLC-RPT-24DC/21"
-			(at 46.99 85.09 90)
+			(at 54.61 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3658,7 +3406,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.974 126.746 0)
+			(at 53.594 126.746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3667,7 +3415,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/ProductDetail/Phoenix-Contact/2900299?qs=yDWYzLgaxI2Ztu%2F0JMLp4g%3D%3D"
-			(at 46.99 97.79 0)
+			(at 54.61 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3676,7 +3424,7 @@
 			)
 		)
 		(property "Description" "PLC-RPT- 24DC/21 - Relay module"
-			(at 46.99 97.79 0)
+			(at 54.61 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3710,7 +3458,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 73.66 165.1 0)
+		(at 30.48 173.99 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3720,7 +3468,7 @@
 		(fields_autoplaced yes)
 		(uuid "df162e65-4f8a-4ede-8ff3-7a8fa8c50b92")
 		(property "Reference" "BT2"
-			(at 69.85 161.9884 0)
+			(at 26.67 170.8784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3729,7 +3477,7 @@
 			)
 		)
 		(property "Value" "12V"
-			(at 69.85 164.5284 0)
+			(at 26.67 173.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3738,7 +3486,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 163.576 90)
+			(at 30.48 172.466 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3747,7 +3495,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.66 163.576 90)
+			(at 30.48 172.466 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3756,7 +3504,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 73.66 165.1 0)
+			(at 30.48 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3781,7 +3529,7 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 118.11 165.1 0)
+		(at 74.93 173.99 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3791,7 +3539,7 @@
 		(fields_autoplaced yes)
 		(uuid "e3e33f23-6d69-4670-a55d-a29faea5d9a7")
 		(property "Reference" "SC1"
-			(at 127 162.941 90)
+			(at 83.82 171.831 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3799,7 +3547,7 @@
 			)
 		)
 		(property "Value" "Solar_Cell"
-			(at 124.46 162.941 90)
+			(at 81.28 171.831 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3807,7 +3555,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 163.576 90)
+			(at 74.93 172.466 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3816,7 +3564,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 163.576 90)
+			(at 74.93 172.466 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3825,7 +3573,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 118.11 165.1 0)
+			(at 74.93 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3850,7 +3598,7 @@
 	)
 	(symbol
 		(lib_id "Irrigation:PLC-RPT-24DC/21")
-		(at 134.62 86.36 270)
+		(at 86.36 85.09 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3859,7 +3607,7 @@
 		(fields_autoplaced yes)
 		(uuid "e61d8ba1-931c-42d6-a803-efc08f88bfd4")
 		(property "Reference" "K1"
-			(at 134.62 71.12 90)
+			(at 86.36 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3867,7 +3615,7 @@
 			)
 		)
 		(property "Value" "PLC-RPT-24DC/21"
-			(at 134.62 73.66 90)
+			(at 86.36 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3875,7 +3623,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.604 115.316 0)
+			(at 85.344 114.046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3884,7 +3632,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/ProductDetail/Phoenix-Contact/2900299?qs=yDWYzLgaxI2Ztu%2F0JMLp4g%3D%3D"
-			(at 134.62 86.36 0)
+			(at 86.36 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3893,7 +3641,7 @@
 			)
 		)
 		(property "Description" "PLC-RPT- 24DC/21 - Relay module"
-			(at 134.62 86.36 0)
+			(at 86.36 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3927,7 +3675,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 80.01 121.92 180)
+		(at 80.01 138.43 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3936,7 +3684,7 @@
 		(fields_autoplaced yes)
 		(uuid "ecc18900-25a2-43a0-b2b3-aab40eaeda13")
 		(property "Reference" "D2"
-			(at 81.5975 114.3 0)
+			(at 81.5975 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3944,7 +3692,7 @@
 			)
 		)
 		(property "Value" "Power"
-			(at 81.5975 116.84 0)
+			(at 81.5975 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3952,7 +3700,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 121.92 0)
+			(at 80.01 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3961,7 +3709,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 80.01 121.92 0)
+			(at 80.01 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3970,7 +3718,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 80.01 121.92 0)
+			(at 80.01 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3979,7 +3727,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 80.01 121.92 0)
+			(at 80.01 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4003,8 +3751,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Phoenix Contact:TMC_71C_06A_1019913")
+		(at 34.29 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed81766c-a901-4f80-9f94-f446296230e3")
+		(property "Reference" "CB1"
+			(at 34.29 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "6A"
+			(at 34.29 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.2265 154.8765 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/ProductDetail/651-1019913"
+			(at 34.29 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 34.29 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "2a867cb8-52ef-4bd7-a10c-591da4f9e4b2")
+		)
+		(pin ""
+			(uuid "65638d30-49b8-406c-888a-98644b2e3857")
+		)
+		(instances
+			(project ""
+				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
+					(reference "CB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Solar_Cell")
-		(at 118.11 156.21 0)
+		(at 74.93 165.1 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4014,7 +3830,7 @@
 		(fields_autoplaced yes)
 		(uuid "fda2ac81-eb62-45dd-9c13-8a4fcc5c3368")
 		(property "Reference" "SC2"
-			(at 127 154.051 90)
+			(at 83.82 162.941 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4022,7 +3838,7 @@
 			)
 		)
 		(property "Value" "Solar_Cell"
-			(at 124.46 154.051 90)
+			(at 81.28 162.941 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4030,7 +3846,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 154.686 90)
+			(at 74.93 163.576 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4039,7 +3855,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 154.686 90)
+			(at 74.93 163.576 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4048,7 +3864,7 @@
 			)
 		)
 		(property "Description" "Single solar cell"
-			(at 118.11 156.21 0)
+			(at 74.93 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
