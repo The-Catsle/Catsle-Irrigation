@@ -590,27 +590,28 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Irrigation:Float Switch"
+		(symbol "Float Switch_1"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0)
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 0 2.54 0)
+				(at 1.27 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "Float Switch"
-				(at 0 -3.81 0)
+				(at 0 -1.524 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -618,6 +619,24 @@
 				)
 			)
 			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lowes.com/pd/Level-Sense-Level-Sense-15-ft-Water-Level-Float-Switch-with-Mounting-Brackets-8230/1003053744"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Float Switch - Normally Open"
 				(at 0 0 0)
 				(effects
 					(font
@@ -626,7 +645,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
 				(at 0 0 0)
 				(effects
 					(font
@@ -635,29 +654,10 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "SPDT reed switch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "reed magnetic switch SPDT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Float Switch_0_0"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 1.905 0.508)
-					)
+			(symbol "Float Switch_1_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -668,58 +668,19 @@
 				)
 				(polyline
 					(pts
-						(xy -2.159 -1.397) (xy 2.286 -1.397)
+						(xy 0 1.27) (xy 0 3.048)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(arc
-					(start -2.159 -1.397)
-					(mid -3.55 0)
-					(end -2.159 1.397)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.159 1.397)
-					(mid 3.55 0)
-					(end 2.159 -1.397)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.159 1.397) (xy -2.159 1.397)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Float Switch_0_1"
-				(polyline
-					(pts
-						(xy 1.27 0.635) (xy 5.08 0.635) (xy 5.08 2.54)
-					)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -730,7 +691,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -0.635) (xy 5.08 -0.635) (xy 5.08 -2.54)
+						(xy 2.54 1.27) (xy -2.54 1.27)
 					)
 					(stroke
 						(width 0)
@@ -738,30 +699,10 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-			)
-			(symbol "Float Switch_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
 					)
 				)
 				(pin passive line
-					(at 7.62 2.54 180)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -779,16 +720,16 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -2.54 180)
+					(at 5.08 0 180)
 					(length 2.54)
-					(name "3"
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1637,10 +1578,16 @@
 		)
 	)
 	(junction
-		(at 125.73 66.04)
+		(at 125.73 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "24a51c36-ca13-453b-8e26-44132ae358d4")
+		(uuid "1fac3f7f-a14a-4e5e-988b-f0260ff93e10")
+	)
+	(junction
+		(at 15.24 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d2ead40-2a53-4c58-8f94-f849bb87154f")
 	)
 	(junction
 		(at 125.73 50.8)
@@ -1649,16 +1596,28 @@
 		(uuid "4dacb7c7-6b9b-4f47-ae3c-51fc85a3a0c2")
 	)
 	(junction
-		(at 125.73 123.19)
+		(at 15.24 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7b7b2c2f-81c6-4076-bedb-75d8aafbeb35")
+		(uuid "577fbf2f-d1cc-4fe7-8451-ec23a3af2c69")
 	)
 	(junction
-		(at 15.24 95.25)
+		(at 125.73 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9a6027dc-6890-4f80-a193-af5bce9d9133")
+		(uuid "63dab22e-78a1-4b84-b0f4-f1e83782087d")
+	)
+	(junction
+		(at 15.24 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68ff3811-0d69-41fd-a349-d88c72697370")
+	)
+	(junction
+		(at 125.73 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a6f85d1-9aad-4e85-8e78-223f26300976")
 	)
 	(junction
 		(at 125.73 35.56)
@@ -1667,22 +1626,10 @@
 		(uuid "9bb97e32-c64d-4577-9e50-7a37b3c79af1")
 	)
 	(junction
-		(at 15.24 68.58)
+		(at 15.24 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9ffc241e-62fd-492b-9786-f24462177b24")
-	)
-	(junction
-		(at 15.24 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aa5d0d95-1dfd-43f3-9def-6da8d6a1c400")
-	)
-	(junction
-		(at 15.24 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d46b2b9f-f51a-4cdd-84e4-b53c1291f014")
+		(uuid "d0dfd6c9-7356-4585-a6c5-adc7b6a504ef")
 	)
 	(junction
 		(at 125.73 138.43)
@@ -1691,10 +1638,10 @@
 		(uuid "d775a4eb-ee97-473e-99c0-87fb26ea81e5")
 	)
 	(junction
-		(at 125.73 92.71)
+		(at 125.73 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d9af3c38-8852-4a1d-92a8-2057ddb6bcb5")
+		(uuid "e2531f03-e24d-4e72-9e27-ad3052aec0c3")
 	)
 	(junction
 		(at 125.73 109.22)
@@ -1714,31 +1661,15 @@
 		(color 0 0 0 0)
 		(uuid "efdd3678-e75e-4213-a92d-065db2dfd068")
 	)
-	(junction
-		(at 125.73 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fb1f8dbf-d387-4f2b-ba54-eb8861912234")
-	)
-	(no_connect
-		(at 93.98 87.63)
-		(uuid "14e86b12-5328-4d99-b9d6-3f3740692b96")
-	)
-	(no_connect
-		(at 62.23 100.33)
-		(uuid "1a99d388-8ae2-49c7-a526-8561bab49153")
-	)
-	(no_connect
-		(at 34.29 55.88)
-		(uuid "ae820c44-9f37-447f-bb37-0db7f04608ed")
-	)
-	(no_connect
-		(at 34.29 26.67)
-		(uuid "ea79dedb-0466-4a6a-ac72-fb3618b2edb6")
-	)
-	(no_connect
-		(at 34.29 40.64)
-		(uuid "ea99ee68-ebb5-46eb-9b78-6c654e4b9bd3")
+	(wire
+		(pts
+			(xy 15.24 92.71) (xy 15.24 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b04d973-ca37-4c92-b257-c873e3417a3f")
 	)
 	(wire
 		(pts
@@ -1762,23 +1693,23 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 97.79) (xy 41.91 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1030c432-9d2e-483e-b6fc-61397d800e41")
-	)
-	(wire
-		(pts
-			(xy 57.15 66.04) (xy 125.73 66.04)
+			(xy 101.6 78.74) (xy 125.73 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "10717036-67f0-427a-a31b-efeb8fde5639")
+	)
+	(wire
+		(pts
+			(xy 125.73 71.12) (xy 125.73 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13dbd678-4bc0-4f91-beb4-dbd92c0da8e9")
 	)
 	(wire
 		(pts
@@ -1812,7 +1743,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 68.58) (xy 21.59 68.58)
+			(xy 15.24 71.12) (xy 24.13 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1822,7 +1753,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 71.12) (xy 73.66 71.12)
+			(xy 34.29 71.12) (xy 78.74 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1852,7 +1783,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 90.17) (xy 73.66 105.41)
+			(xy 73.66 81.28) (xy 73.66 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1862,7 +1793,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 24.13) (xy 15.24 24.13)
+			(xy 24.13 21.59) (xy 15.24 21.59)
 		)
 		(stroke
 			(width 0)
@@ -1872,7 +1803,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 92.71) (xy 125.73 109.22)
+			(xy 125.73 83.82) (xy 125.73 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1902,7 +1833,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 80.01) (xy 125.73 80.01)
+			(xy 93.98 71.12) (xy 125.73 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1919,16 +1850,6 @@
 			(type default)
 		)
 		(uuid "3d3df321-c31d-449e-9e63-6bdeb7bb24a7")
-	)
-	(wire
-		(pts
-			(xy 78.74 80.01) (xy 73.66 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41524e28-e5bd-4ac8-80ec-9c782c0a6e14")
 	)
 	(wire
 		(pts
@@ -1952,16 +1873,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 80.01) (xy 73.66 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "431ba025-de94-49ae-89f1-14398cc76a7e")
-	)
-	(wire
-		(pts
 			(xy 74.93 158.75) (xy 74.93 160.02)
 		)
 		(stroke
@@ -1979,6 +1890,16 @@
 			(type default)
 		)
 		(uuid "43e0e5a4-d625-4fcd-a2da-6616d6affd7e")
+	)
+	(wire
+		(pts
+			(xy 125.73 100.33) (xy 125.73 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "475475b4-40f8-4393-b3e0-940c7a80eb2b")
 	)
 	(wire
 		(pts
@@ -2002,23 +1923,23 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 95.25) (xy 15.24 95.25)
+			(xy 15.24 71.12) (xy 15.24 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53784501-f8cb-4ee4-9328-9dd952506f71")
+	)
+	(wire
+		(pts
+			(xy 24.13 92.71) (xy 15.24 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5719d607-85f3-41a3-8a35-db7cbd523e8e")
-	)
-	(wire
-		(pts
-			(xy 15.24 95.25) (xy 15.24 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5db22e75-ad6e-44fd-9891-35dbf728b58d")
 	)
 	(wire
 		(pts
@@ -2032,16 +1953,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 123.19) (xy 76.2 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "622bca0b-f375-4190-830d-6423718d9d06")
-	)
-	(wire
-		(pts
 			(xy 62.23 92.71) (xy 68.58 92.71)
 		)
 		(stroke
@@ -2049,16 +1960,6 @@
 			(type default)
 		)
 		(uuid "62bb14a2-72c1-42c6-9c47-a0dc8ce35aee")
-	)
-	(wire
-		(pts
-			(xy 34.29 66.04) (xy 49.53 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ca1d65c-ab15-4972-b8d5-f6e9efe85027")
 	)
 	(wire
 		(pts
@@ -2072,27 +1973,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 50.8) (xy 125.73 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6db225b8-5f70-4104-850b-74586c787230")
-	)
-	(wire
-		(pts
-			(xy 125.73 123.19) (xy 125.73 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "744d5b3b-f8c5-47b6-8503-4ae57edbe01b")
-	)
-	(wire
-		(pts
-			(xy 73.66 90.17) (xy 78.74 90.17)
+			(xy 73.66 81.28) (xy 78.74 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2112,7 +1993,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 68.58) (xy 15.24 95.25)
+			(xy 15.24 50.8) (xy 15.24 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2122,7 +2003,17 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 123.19) (xy 125.73 123.19)
+			(xy 125.73 50.8) (xy 125.73 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7704f5ae-e76a-478f-952f-4029703e3b6a")
+	)
+	(wire
+		(pts
+			(xy 100.33 100.33) (xy 125.73 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2142,17 +2033,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 53.34) (xy 15.24 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8802f708-b102-4a54-85f6-bfe6999356cb")
-	)
-	(wire
-		(pts
-			(xy 125.73 109.22) (xy 125.73 123.19)
+			(xy 125.73 109.22) (xy 125.73 138.43)
 		)
 		(stroke
 			(width 0)
@@ -2182,7 +2063,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 92.71) (xy 104.14 92.71)
+			(xy 93.98 83.82) (xy 104.14 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2202,13 +2083,13 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 38.1) (xy 15.24 53.34)
+			(xy 92.71 100.33) (xy 62.23 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "92937965-fa4a-47c6-bb6d-5a4b5c5b2d43")
+		(uuid "96b0dc31-7ebb-45c0-ab4b-6532d1ce9354")
 	)
 	(wire
 		(pts
@@ -2222,7 +2103,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 53.34) (xy 15.24 53.34)
+			(xy 24.13 50.8) (xy 15.24 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2239,6 +2120,16 @@
 			(type default)
 		)
 		(uuid "a360e85b-5d89-4a3b-bec6-8b1a8f781ed1")
+	)
+	(wire
+		(pts
+			(xy 15.24 35.56) (xy 15.24 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7c244fd-d899-4f78-b08d-ed1b7a28ecae")
 	)
 	(wire
 		(pts
@@ -2262,7 +2153,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 38.1) (xy 15.24 38.1)
+			(xy 24.13 35.56) (xy 15.24 35.56)
 		)
 		(stroke
 			(width 0)
@@ -2279,6 +2170,16 @@
 			(type default)
 		)
 		(uuid "b64b4c5a-1352-44a2-97f1-41d0a6c66abb")
+	)
+	(wire
+		(pts
+			(xy 125.73 78.74) (xy 125.73 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b935e45c-605c-46b1-826d-56e4f9e19a17")
 	)
 	(wire
 		(pts
@@ -2302,7 +2203,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 92.71) (xy 125.73 92.71)
+			(xy 116.84 83.82) (xy 125.73 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2322,7 +2223,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 24.13) (xy 15.24 38.1)
+			(xy 15.24 21.59) (xy 15.24 35.56)
 		)
 		(stroke
 			(width 0)
@@ -2362,16 +2263,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 66.04) (xy 125.73 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb3b28bb-086e-464c-9b4f-90ac31aee92d")
-	)
-	(wire
-		(pts
 			(xy 68.58 109.22) (xy 125.73 109.22)
 		)
 		(stroke
@@ -2399,26 +2290,6 @@
 			(type default)
 		)
 		(uuid "f115802c-70c9-4da0-8094-dfef5455e14c")
-	)
-	(wire
-		(pts
-			(xy 34.29 97.79) (xy 41.91 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f90f93eb-651e-45a8-98c3-9645b8d522ca")
-	)
-	(wire
-		(pts
-			(xy 125.73 80.01) (xy 125.73 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbcb2819-6cf6-426c-b0cf-98ec1c1247bb")
 	)
 	(symbol
 		(lib_id "Device:LED")
@@ -2498,150 +2369,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Irrigation:Float Switch")
-		(at 26.67 24.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2d90bbfb-c16c-4ced-9016-75f9807ff59b")
-		(property "Reference" "SW7"
-			(at 27.3715 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "25%"
-			(at 27.3715 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SPDT reed switch"
-			(at 26.67 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "18294e7d-3ab1-4fd7-84ad-0b1a2ab06dd0")
-		)
-		(pin "3"
-			(uuid "6b825a31-8fa3-45e1-8980-0620377dc156")
-		)
-		(pin "2"
-			(uuid "39fa4858-ded3-45e8-a49a-5aacac09e454")
-		)
-		(instances
-			(project ""
-				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
-					(reference "SW7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Irrigation:Float Switch")
-		(at 26.67 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3bcf06f3-648d-43b0-a4b5-64af59f031a7")
-		(property "Reference" "SW9"
-			(at 27.3715 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "75%"
-			(at 27.3715 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SPDT reed switch"
-			(at 26.67 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2df1845a-1bce-4ce7-b87a-caab2bf36057")
-		)
-		(pin "3"
-			(uuid "d8f5bc35-58c2-4b0b-a7b1-7bc1ae51b16c")
-		)
-		(pin "2"
-			(uuid "f7b9bc23-8d65-4ed9-a3f5-97bc313e44dc")
-		)
-		(instances
-			(project "irrigation"
-				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
-					(reference "SW9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
-		(at 53.34 66.04 180)
+		(at 97.79 78.74 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2650,7 +2379,7 @@
 		(fields_autoplaced yes)
 		(uuid "44ea24d8-a266-449e-ac09-a56a224934e5")
 		(property "Reference" "D6"
-			(at 54.9275 58.42 0)
+			(at 99.3775 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2658,7 +2387,7 @@
 			)
 		)
 		(property "Value" "100% Full"
-			(at 54.9275 60.96 0)
+			(at 99.3775 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2666,7 +2395,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 66.04 0)
+			(at 97.79 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2675,7 +2404,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 66.04 0)
+			(at 97.79 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2684,7 +2413,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 53.34 66.04 0)
+			(at 97.79 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2693,7 +2422,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 53.34 66.04 0)
+			(at 97.79 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2718,7 +2447,7 @@
 	)
 	(symbol
 		(lib_id "Irrigation:Pump")
-		(at 111.76 92.71 90)
+		(at 111.76 83.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2727,7 +2456,7 @@
 		(fields_autoplaced yes)
 		(uuid "5c7ebff4-2862-4edb-8ccc-9602b173f77e")
 		(property "Reference" "M1"
-			(at 111.76 85.09 90)
+			(at 111.76 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2735,7 +2464,7 @@
 			)
 		)
 		(property "Value" "Pump"
-			(at 111.76 87.63 90)
+			(at 111.76 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2743,7 +2472,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.506 92.71 0)
+			(at 111.506 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2752,7 +2481,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.amazon.com/dp/B08NK7NWS3"
-			(at 111.506 92.71 0)
+			(at 111.506 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2761,7 +2490,7 @@
 			)
 		)
 		(property "Description" "24V Water Pump"
-			(at 111.76 92.71 0)
+			(at 111.76 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2785,8 +2514,77 @@
 		)
 	)
 	(symbol
+		(lib_name "Float Switch_1")
+		(lib_id "Irrigation:Float Switch")
+		(at 29.21 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60db7f96-530f-4df1-aec1-a52c42fce5c5")
+		(property "Reference" "SW5"
+			(at 29.21 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Well Empty"
+			(at 29.21 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lowes.com/pd/Level-Sense-Level-Sense-15-ft-Water-Level-Float-Switch-with-Mounting-Brackets-8230/1003053744"
+			(at 29.21 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Float Switch - Normally Open"
+			(at 29.21 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a740040-5517-4e04-8de6-422cf492f811")
+		)
+		(pin "2"
+			(uuid "d4e696b5-479b-4150-9c32-c9c5a2a52d98")
+		)
+		(instances
+			(project "irrigation"
+				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
-		(at 80.01 123.19 180)
+		(at 96.52 100.33 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2795,7 +2593,7 @@
 		(fields_autoplaced yes)
 		(uuid "631b3901-6d93-419b-8f4e-7e55aab6e797")
 		(property "Reference" "D7"
-			(at 81.5975 115.57 0)
+			(at 98.1075 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2803,7 +2601,7 @@
 			)
 		)
 		(property "Value" "Well Empty"
-			(at 81.5975 118.11 0)
+			(at 98.1075 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2811,7 +2609,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 123.19 0)
+			(at 96.52 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2820,7 +2618,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 80.01 123.19 0)
+			(at 96.52 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2829,7 +2627,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 80.01 123.19 0)
+			(at 96.52 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2838,7 +2636,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 80.01 123.19 0)
+			(at 96.52 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2856,6 +2654,75 @@
 			(project "irrigation"
 				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
 					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Float Switch_1")
+		(lib_id "Irrigation:Float Switch")
+		(at 29.21 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73caf680-eb26-48d2-bccd-2c8453b1d6cb")
+		(property "Reference" "SW1"
+			(at 29.21 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "25%"
+			(at 29.21 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lowes.com/pd/Level-Sense-Level-Sense-15-ft-Water-Level-Float-Switch-with-Mounting-Brackets-8230/1003053744"
+			(at 29.21 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Float Switch - Normally Open"
+			(at 29.21 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93def990-e1f4-421b-bb5e-85ac303ec470")
+		)
+		(pin "2"
+			(uuid "8e665f96-20f4-447b-8df9-d843e6f69cdd")
+		)
+		(instances
+			(project ""
+				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3167,88 +3034,18 @@
 		)
 	)
 	(symbol
+		(lib_name "Float Switch_1")
 		(lib_id "Irrigation:Float Switch")
-		(at 26.67 95.25 0)
+		(at 29.21 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a05592be-92df-477d-9268-68a742d05055")
-		(property "Reference" "SW11"
-			(at 27.3715 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "75%"
-			(at 27.3715 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SPDT reed switch"
-			(at 26.67 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "51b7bf06-8faa-42e7-af12-aaa73612ea5d")
-		)
-		(pin "3"
-			(uuid "c5075f4d-6671-44a4-98bd-b06c20c2fce3")
-		)
-		(pin "2"
-			(uuid "f4ce0955-d2e4-4534-bd2f-0940e256f6ce")
-		)
-		(instances
-			(project "irrigation"
-				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
-					(reference "SW11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Irrigation:Float Switch")
-		(at 26.67 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "acf81dbf-c7b9-44d6-82ed-8bcb5525842d")
-		(property "Reference" "SW8"
-			(at 27.3715 30.48 0)
+		(uuid "b7284616-5cd7-42c8-b97d-1e19176c7520")
+		(property "Reference" "SW2"
+			(at 29.21 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3256,7 +3053,7 @@
 			)
 		)
 		(property "Value" "50%"
-			(at 27.3715 33.02 0)
+			(at 29.21 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3264,7 +3061,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 38.1 0)
+			(at 29.21 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3272,8 +3069,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 26.67 38.1 0)
+		(property "Datasheet" "https://www.lowes.com/pd/Level-Sense-Level-Sense-15-ft-Water-Level-Float-Switch-with-Mounting-Brackets-8230/1003053744"
+			(at 29.21 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3281,8 +3078,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SPDT reed switch"
-			(at 26.67 38.1 0)
+		(property "Description" "Float Switch - Normally Open"
+			(at 29.21 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3291,43 +3088,41 @@
 			)
 		)
 		(pin "1"
-			(uuid "2cdcc04f-dd30-4f78-8f94-2934fa4421d0")
-		)
-		(pin "3"
-			(uuid "265a411e-5ec8-49b2-88d2-18f6aa70cdb8")
+			(uuid "b5b37976-f539-421f-afdd-eef92757a09b")
 		)
 		(pin "2"
-			(uuid "d3281aa0-669a-44e0-aed3-2cb52e77c456")
+			(uuid "e68552b9-2a3d-4a7b-a884-c0b17da45697")
 		)
 		(instances
 			(project "irrigation"
 				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
-					(reference "SW8")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_name "Float Switch_1")
 		(lib_id "Irrigation:Float Switch")
-		(at 26.67 68.58 0)
+		(at 29.21 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c5235643-e6e2-4dd9-bc8e-95515eeabd8a")
-		(property "Reference" "SW10"
-			(at 27.3715 60.96 0)
+		(uuid "d422bc07-126c-4839-874d-c07ed138cc60")
+		(property "Reference" "SW4"
+			(at 29.21 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "75%"
-			(at 27.3715 63.5 0)
+		(property "Value" "100%"
+			(at 29.21 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3335,7 +3130,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 68.58 0)
+			(at 29.21 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3343,8 +3138,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 26.67 68.58 0)
+		(property "Datasheet" "https://www.lowes.com/pd/Level-Sense-Level-Sense-15-ft-Water-Level-Float-Switch-with-Mounting-Brackets-8230/1003053744"
+			(at 29.21 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3352,8 +3147,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SPDT reed switch"
-			(at 26.67 68.58 0)
+		(property "Description" "Float Switch - Normally Open"
+			(at 29.21 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3362,18 +3157,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "605e68f8-b161-406d-be80-34b733d6a88a")
-		)
-		(pin "3"
-			(uuid "9aa6bc67-5d5c-4e64-9f4a-37d813368bb2")
+			(uuid "9173c3d7-88f7-487f-9a60-01420a4a3540")
 		)
 		(pin "2"
-			(uuid "ff7c744f-2067-4f0d-bac0-7d371286610c")
+			(uuid "e7c06a32-35fa-4c87-bf99-7948c1669554")
 		)
 		(instances
 			(project "irrigation"
 				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
-					(reference "SW10")
+					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -3598,7 +3390,7 @@
 	)
 	(symbol
 		(lib_id "Irrigation:PLC-RPT-24DC/21")
-		(at 86.36 85.09 270)
+		(at 86.36 76.2 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3607,7 +3399,7 @@
 		(fields_autoplaced yes)
 		(uuid "e61d8ba1-931c-42d6-a803-efc08f88bfd4")
 		(property "Reference" "K1"
-			(at 86.36 69.85 90)
+			(at 86.36 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3615,7 +3407,7 @@
 			)
 		)
 		(property "Value" "PLC-RPT-24DC/21"
-			(at 86.36 72.39 90)
+			(at 86.36 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3623,7 +3415,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.344 114.046 0)
+			(at 85.344 105.156 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3632,7 +3424,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/ProductDetail/Phoenix-Contact/2900299?qs=yDWYzLgaxI2Ztu%2F0JMLp4g%3D%3D"
-			(at 86.36 85.09 0)
+			(at 86.36 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3641,7 +3433,7 @@
 			)
 		)
 		(property "Description" "PLC-RPT- 24DC/21 - Relay module"
-			(at 86.36 85.09 0)
+			(at 86.36 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3813,6 +3605,75 @@
 			(project ""
 				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
 					(reference "CB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Float Switch_1")
+		(lib_id "Irrigation:Float Switch")
+		(at 29.21 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fbb9b6d2-d445-4ff8-8ace-2ec9c79f5907")
+		(property "Reference" "SW3"
+			(at 29.21 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "75%"
+			(at 29.21 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lowes.com/pd/Level-Sense-Level-Sense-15-ft-Water-Level-Float-Switch-with-Mounting-Brackets-8230/1003053744"
+			(at 29.21 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Float Switch - Normally Open"
+			(at 29.21 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "691d8623-e30f-4cc7-ba74-d8b29ab35fa4")
+		)
+		(pin "2"
+			(uuid "881bee23-24b3-4f51-80a4-dc74a6ee334a")
+		)
+		(instances
+			(project "irrigation"
+				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
+					(reference "SW3")
 					(unit 1)
 				)
 			)

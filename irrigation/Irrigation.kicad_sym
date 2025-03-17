@@ -7,22 +7,23 @@
 			(hide yes)
 		)
 		(pin_names
-			(offset 0)
+			(offset 1.016)
 			(hide yes)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "SW"
-			(at 0 2.54 0)
+			(at 1.27 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "Float Switch"
-			(at 0 -3.81 0)
+			(at 0 -1.524 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30,6 +31,24 @@
 			)
 		)
 		(property "Footprint" ""
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lowes.com/pd/Level-Sense-Level-Sense-15-ft-Water-Level-Float-Switch-with-Mounting-Brackets-8230/1003053744"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Float Switch - Normally Open"
 			(at 0 0 0)
 			(effects
 				(font
@@ -38,100 +57,19 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "ki_keywords" "switch normally-open pushbutton push-button"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Description" "SPDT reed switch"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "reed magnetic switch SPDT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "Float Switch_0_0"
-			(polyline
-				(pts
-					(xy -2.54 0) (xy 1.905 0.508)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.159 -1.397) (xy 2.286 -1.397)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -2.159 -1.397)
-				(mid -3.55 0)
-				(end -2.159 1.397)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 2.159 1.397)
-				(mid 3.55 0)
-				(end 2.159 -1.397)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 2.159 1.397) (xy -2.159 1.397)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
 			)
 		)
 		(symbol "Float Switch_0_1"
-			(polyline
-				(pts
-					(xy 1.27 0.635) (xy 5.08 0.635) (xy 5.08 2.54)
-				)
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -142,7 +80,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 -0.635) (xy 5.08 -0.635) (xy 5.08 -2.54)
+					(xy 0 1.27) (xy 0 3.048)
 				)
 				(stroke
 					(width 0)
@@ -152,28 +90,31 @@
 					(type none)
 				)
 			)
-		)
-		(symbol "Float Switch_1_1"
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
 				(at -5.08 0 0)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 7.62 2.54 180)
 				(length 2.54)
 				(name "1"
 					(effects
@@ -191,16 +132,16 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 -2.54 180)
+				(at 5.08 0 180)
 				(length 2.54)
-				(name "3"
+				(name "2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
