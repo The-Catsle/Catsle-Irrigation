@@ -184,7 +184,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.renogy.com/wanderer-10a-pwm-charge-controller/"
 			(at 0 21.59 0)
 			(effects
 				(font
