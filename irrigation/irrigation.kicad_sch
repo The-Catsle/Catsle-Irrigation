@@ -5830,7 +5830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/ProductDetail/VCC/PCL2224V500B?qs=sGAEpiMZZMuoiZ4qluBmlbODkldxIvjo35NVsPV%252BxVuNlKlTTcZSKw%3D%3D"
 			(at 198.12 83.82 0)
 			(effects
 				(font
@@ -6086,7 +6086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/ProductDetail/VCC/PCL2224V500B?qs=sGAEpiMZZMuoiZ4qluBmlbODkldxIvjo35NVsPV%252BxVuNlKlTTcZSKw%3D%3D"
 			(at 222.25 104.14 0)
 			(effects
 				(font
@@ -6300,7 +6300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/ProductDetail/VCC/PCL2224V100B?qs=sGAEpiMZZMuoiZ4qluBmlbODkldxIvjoCc469PFibLmdUZDPYgj99g%3D%3D"
 			(at 219.71 132.08 0)
 			(effects
 				(font
@@ -6446,7 +6446,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/ProductDetail/VCC/PCL2224V500B?qs=sGAEpiMZZMuoiZ4qluBmlbODkldxIvjo35NVsPV%252BxVuNlKlTTcZSKw%3D%3D"
 			(at 198.12 60.96 0)
 			(effects
 				(font
@@ -6673,7 +6673,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.renogy.com/wanderer-10a-pwm-charge-controller/"
 			(at 54.61 201.93 0)
 			(effects
 				(font
@@ -6753,7 +6753,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/ProductDetail/VCC/PCL2224V500B?qs=sGAEpiMZZMuoiZ4qluBmlbODkldxIvjo35NVsPV%252BxVuNlKlTTcZSKw%3D%3D"
 			(at 198.12 72.39 0)
 			(effects
 				(font
@@ -7615,7 +7615,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.com/ProductDetail/VCC/PCL2224V600B?qs=sGAEpiMZZMuoiZ4qluBmlbODkldxIvjoXVqihUm1cmHZRfA08PhZQA%3D%3D"
 			(at 198.12 46.99 0)
 			(effects
 				(font
