@@ -2041,7 +2041,7 @@
 						)
 					)
 				)
-				(number "A1"
+				(number "A2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2059,7 +2059,7 @@
 						)
 					)
 				)
-				(number "A2"
+				(number "A1"
 					(effects
 						(font
 							(size 1.27 1.27)
