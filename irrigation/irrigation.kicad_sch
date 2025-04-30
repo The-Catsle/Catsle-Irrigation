@@ -6427,8 +6427,8 @@
 		)
 	)
 	(rectangle
-		(start 15.24 140.97)
-		(end 72.39 186.69)
+		(start 15.24 138.43)
+		(end 72.39 184.15)
 		(stroke
 			(width 0)
 			(type dash)
@@ -6498,7 +6498,7 @@
 	)
 	(text "Power Distribution"
 		(exclude_from_sim no)
-		(at 24.13 15.494 0)
+		(at 24.638 18.288 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6508,7 +6508,7 @@
 	)
 	(text "Pump Control"
 		(exclude_from_sim no)
-		(at 139.192 15.494 0)
+		(at 139.7 18.542 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6518,7 +6518,7 @@
 	)
 	(text "Front-Panel LEDs"
 		(exclude_from_sim no)
-		(at 234.188 51.054 0)
+		(at 233.934 53.848 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6528,7 +6528,7 @@
 	)
 	(text "External Interfaces"
 		(exclude_from_sim no)
-		(at 85.09 15.748 0)
+		(at 85.852 18.542 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6719,6 +6719,16 @@
 			(type default)
 		)
 		(uuid "0c722b8e-3087-499d-909e-cebb115b2c30")
+	)
+	(wire
+		(pts
+			(xy 147.32 130.81) (xy 151.13 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eebdb8a-4a2a-4424-a776-9a2cb49c1b1e")
 	)
 	(wire
 		(pts
@@ -7422,16 +7432,6 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 130.81) (xy 151.13 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92bb349b-00ad-433a-84f8-a0ac2b8fd60b")
-	)
-	(wire
-		(pts
 			(xy 110.49 81.28) (xy 231.14 81.28)
 		)
 		(stroke
@@ -7679,6 +7679,16 @@
 			(type default)
 		)
 		(uuid "c9b830b9-c07e-4a4a-8ed3-a264286664de")
+	)
+	(wire
+		(pts
+			(xy 110.49 130.81) (xy 137.16 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca7765bb-b48b-4c0d-93b8-dc06a8a9ad5b")
 	)
 	(wire
 		(pts
@@ -8219,16 +8229,6 @@
 			(justify left bottom)
 		)
 		(uuid "7ed9629c-63e7-4616-9a17-bed6e8c4ec00")
-	)
-	(label "25"
-		(at 149.86 130.81 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7fe4d830-2bcf-431c-ad60-699f9d81b22c")
 	)
 	(label "22"
 		(at 228.6 97.79 0)
@@ -12852,6 +12852,74 @@
 			(project ""
 				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
 					(reference "CB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Irrigation:Toggle Switch")
+		(at 142.24 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f22869ca-eeec-4b58-9cee-fe7abbbcf78d")
+		(property "Reference" "SW7"
+			(at 142.24 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fill Switch"
+			(at 142.24 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/ProductDetail/TE-Connectivity-Kissling/07-1-2-13-910?qs=OlC7AqGiEDn5ZAFZ0c7jmA%3D%3D"
+			(at 142.24 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 142.24 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d4fd9812-7e7f-47fe-b41f-346dcc2b37f9")
+		)
+		(pin "1"
+			(uuid "29bc1c68-17a7-49a8-914e-59813607f327")
+		)
+		(instances
+			(project "irrigation"
+				(path "/e99b2683-5fc9-4ee4-bdcd-d6e5faee292b"
+					(reference "SW7")
 					(unit 1)
 				)
 			)
