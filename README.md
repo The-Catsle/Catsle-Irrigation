@@ -42,4 +42,8 @@ added links to all the datasheets for every part if you're curious.
 > May 17 Export
 
 # Problems
-So this project is a version 1 of the overall concept and we 
+So this project is a version 1 of the overall concept but we wanted to start somewhre. 
+* The well/creek pump isn't very deep in the water and can run dry during some normal
+flow states
+* The hose connecting the barrels is too small which results in (slightly) inaccurate
+fill readings
