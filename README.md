@@ -21,8 +21,18 @@ in the corner of the yard.
 This photo is already slightly outdated but it gives you the gist of the layout. The only major
 changes I've made since this photo have been to delete the left relay and clean up some of the
 wiring. 
+
 ![E9624C94-3CB4-488F-B1D6-7A105D0BB151_1_105_c](https://github.com/user-attachments/assets/497fcb5f-9071-40cc-b3fc-92c2d330d6de)
 
+The percentage lights are controlled by a series of float switches in one of the barrels and
+tell us how much water we have.
+
+![1F83D141-623B-432B-AB2E-2534BE3C1CF8_1_105_c](https://github.com/user-attachments/assets/ab1831cb-a418-4094-b2aa-79fcff070df4)
+
+Additionally some switches will enable or disable the two pumps. The 100% full switch (when
+high) will disable the pump that fills the system. The 25% full switch (when low) will disable
+the drain pump. And we also have a float switch in the creek that will disable the fill pump
+if the creek goes dry.
 
 # The Schematic
 I used KiCAD to create the schematic. The image should be all you need to understand it, but I have
@@ -30,3 +40,6 @@ added links to all the datasheets for every part if you're curious.
 
 ![image](https://github.com/user-attachments/assets/6ba22fbe-a74a-45fe-b941-3be392edae55)
 > May 17 Export
+
+# Problems
+So this project is a version 1 of the overall concept and we 
