@@ -38,8 +38,8 @@ if the creek goes dry.
 I used KiCAD to create the schematic. The image should be all you need to understand it, but I have
 added links to all the datasheets for every part if you're curious. 
 
-![image](https://github.com/user-attachments/assets/6ba22fbe-a74a-45fe-b941-3be392edae55)
-> May 17 Export
+![image](https://github.com/user-attachments/assets/c199cb2f-7e66-4281-9aab-05de9c83b283)
+> May 26th 2025 Export
 
 # Problems
 So this project is a version 1 of the overall concept but we wanted to start somewhre. 
